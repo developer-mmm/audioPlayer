@@ -1,0 +1,141 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'int';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/inter-v13-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'int600';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/inter-v13-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'int700';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/inter-v13-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.musicPlayer {
+    width: 400px;
+    background: rebeccapurple;
+    border-radius: 12px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle {
+    width: 40px;
+    height: 40px;
+    color: blueviolet;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    box-shadow: 0 5px 10px rgb(255, 26, 26, 0.22);
+}
+
+.song_img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgb(255, 26, 26, 0.22);
+}
+
+.musicPlayer h1 {
+    font-family: 'int';
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.musicPlayer h4 {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'int';
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: yellowgreen;
+    border-radius: 4px;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: yellowgreen;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgb(255, 26, 26, 0.22);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: blueviolet;
+    box-shadow: 0 10px 20px rgb(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: blueviolet;
+    color: white;
+}
